@@ -1,0 +1,31 @@
+.navbar {
+  overflow: hidden;
+  background-color: #BEE2DE;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  font-size: 25px;
+}
+
+.img {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.AT{
+font-size: 30px;
+}
+
+.projects{
+background-color: #BEE2DE;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.post-details{
+margin-left: 100px;
+margin-right: 100px;
+}

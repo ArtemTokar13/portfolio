@@ -1,0 +1,30 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+        <div class="container text-center">
+
+            <h1>This is my blog</h1>
+            <!--{{ posts.count }} - counting objects. blog{{ blogs.count|pluralize }} - if one object - 'blog' otherwize - 'blogs'-->
+            <h2>We found {{ posts.count }} post{{ posts.count|pluralize }} for you</h2>
+            <!--posts from views-->
+        </div>
+        <div class="container">
+                <div class="col-md-6">
+                    {% for post in posts %}
+
+                        <!--url 'detail' - detail from urls.py-->
+                        <!--post.id - id of one post from QwerySet-->
+                        <a href="{% url 'aboutall_blog:detail' post.id %}"><h2>{{ post.post_title }}</h2></a>
+                        <p>{{ post.post_description }}</p>
+                        <!--truncatechars:150 - how many characters we want to show-->
+                        <p>{{ post.post_fulltext|truncatechars:150 }}</p>
+                        <!--date:'M j Y' - date format-->
+                        <p>{{ post.post_create_at|date:'M j Y'|upper }}</p>
+                        <p>{{ post.post_author }}</p>
+
+                    {% endfor %}
+                </div>
+        </div>
+
+{% endblock %}

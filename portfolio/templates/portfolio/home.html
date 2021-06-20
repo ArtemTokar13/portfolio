@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="container text-center">
+        <img src="{% static 'portfolio/me.jpg' %}" class="img img-fluid">
+
+        <h1 class="projects container text-center">PROJECTS</h1>
+        <div class="col-md-4">
+        {% for project in projects %}
+
+            <image src="{{ project.image.url }}" class="img-fluid"></image>
+            <a class="l-flex" href="{{ project.url }}"><h2>{{ project.title }}</h2></a>
+            <p>{{ project.description }}</p>
+
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}
