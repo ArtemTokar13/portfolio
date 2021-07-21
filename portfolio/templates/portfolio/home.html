@@ -6,16 +6,23 @@
 
     <div class="container text-center">
         <img src="{% static 'portfolio/me.jpg' %}" class="img img-fluid">
-
+        <h1 class="container text-center">Personal portfolio of</h1>
+        <h1 class="container text-center">ARTEM TOKAR</h1>
+        <h1 class="container text-center">Back-End developer</h1>
+        <br>
         <h1 class="projects container text-center">PROJECTS</h1>
-        <div class="col-md-4">
-        {% for project in projects %}
+        <div class="container">
+        <div class="row">
 
-            <image src="{{ project.image.url }}" class="img-fluid"></image>
+        {% for project in projects %}
+            <div class="col-sm-4">
+            <image src="{{ project.image.url }}" class="home-top img img-fluid"></image>
             <a class="l-flex" href="{{ project.url }}"><h2>{{ project.title }}</h2></a>
             <p>{{ project.description }}</p>
-
+            </div>
         {% endfor %}
         </div>
+        </div>
+
     </div>
 {% endblock %}

@@ -11,3 +11,4 @@ def all_blogs(request):
 def detail(request, post_id):
     blog_post = get_object_or_404(Aboutall, pk=post_id) # pk - primary key
     return render(request, 'aboutall_blog/detail.html', context={'blog_post': blog_post})
+
