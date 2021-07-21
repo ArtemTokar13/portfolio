@@ -154,3 +154,161 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV-Artem-Tokar</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="body-cv">
+    <!-- main conteiner -->
+    <div class="main_conteiner">
+        <!--main content-->
+        <div class="main_content">
+
+            <!-- About me section -->
+            <div>
+                <h2 class="about_me">Back-End Developer</h2>
+                <h1 class="about_me_name">Artem Tokar</h1>
+                <p class="about_me_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+            <!-- my projects section-->
+            <div class="mi_projects">
+                <h3 class="main_content_tittle">Projects</h3>
+                <ol class="my_project_list">
+                    <li class="my_projects_item">
+                        <span class="my_projects_text">
+                            <a href="https://spapostat.pythonanywhere.com/" class="my_project_link">https://spapostat.pythonanywhere.com/</a>
+                            ...............
+                            <span class="my_project_bracket">[</span> My portfolio <span class="my_project_bracket">]</span>
+                        </span>
+                    </li>
+                    <li class="my_projects_item">
+                        <span class="my_projects_text">
+                            <a href="https://artemtouch.pythonanywhere.com" class="my_project_link">https://artemtouch.pythonanywhere.com</a>
+                            ............
+                            <span class="my_project_bracket">[</span> Techblog <span class="my_project_bracket">]</span>
+                        </span>
+                    </li>
+
+                </ol>
+            </div>
+            <hr>
+            <!--my work eexperience-->
+            <div class="mi_work_experience">
+                <h3 class="main_content_tittle">Work Experience</h3>
+                <!--Company2-->
+                <div class="my_work_experience_list">
+                    <h4 class="my_work_experience_position">Manager of support <span class="my_work_experience_company"> Ukrsibbank BNP Paribas </span> </h4>
+                    <p class="my_work_experience_time">April 2010 - May 2016 <span class="devider"> | </span> Ukraine</p>
+                    <ul class="my_work_experience_duties">
+                        <li class="my_work_experience_duty">Concluding contracts for support of bank branches and ATMs in the region.</li>
+                        <li class="my_work_experience_duty">Cooperation with local gavernments.</li>
+                        <li class="my_work_experience_duty">Rent of premises for bank branches.</li>
+                        <li class="my_work_experience_duty">Information support of bank branches using SAP.</li>
+                    </ul>
+                </div>
+                <!--Company1-->
+                <div class="my_work_experience_list">
+                    <h4 class="my_work_experience_position">System administrator<span class="my_work_experience_company"> Ukrsibbank BNP Paribas </span></h4>
+                    <p class="my_work_experience_time">June 2006 - April 2010 <span class="devider"> | </span> Ukraine</p>
+                    <ul class="my_work_experience_duties">
+                        <li class="my_work_experience_duty">Administrating local net (150 workstations, Windows 2000 server, Outlook server, Lotus).</li>
+                        <li class="my_work_experience_duty">Installing and maintening of ATMs Wincor Nixdorf 2100/2050 and Diebold Opteva 562.</li>
+                        <li class="my_work_experience_duty">Fixing PCs and Printers.</li>
+                        <li class="my_work_experience_duty">Installing and fixing SCS.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <!--my-education-->
+                <div class="my_education">
+                    <h3 class="main_content_tittle">Educacion</h3>
+                    <h4 class="my_education_name">National University of Oil and Gas</h4>
+                    <h5 class="my_education_speciality">Computer systems and nets</h5>
+                    <p class="my_work_experience_time">September 2001 - June 2006 <span class="devider"> | </span> Ukraine</p>
+                </div>
+                <div class="my_education">
+                    <h4 class="my_education_name">Self-Education (Udemy, Stepik, YouTube, others open resourses)</h4>
+                    <h5 class="my_education_speciality"></h5>
+                    <h5 class="my_education_speciality">2021 Complete Python Bootcamp From Zero to Hero in Python (Udemy)</h5>
+                    <h5 class="my_education_speciality">Django 3 - Full Stack Websites with Python Web Development (Udemy)</h5>
+                    <h5 class="my_education_speciality">Build a Backend REST API with Python & Django (Udemy)</h5>
+                    <h5 class="my_education_speciality">Real World Python Test Automation with Pytest (Django app) (Udemy)</h5>
+                    <h5 class="my_education_speciality">Intro to Programming in Python (Stepik)</h5>
+                    <h5 class="my_education_speciality">Python: Basics and Applications (Stepik)</h5>
+                    <h5 class="my_education_speciality">Introduction of Linux (Stepik)</h5>
+                    <h5 class="my_education_speciality">Html & CSS basics (Stepik)</h5>
+                    <h5 class="my_education_speciality">Introduction to OOP for Python developers (Stepik)</h5>
+                    <p class="my_work_experience_time">March 2021 - till today <span class="devider"> | </span> Spain</p>
+                </div>
+
+        </div>
+
+        <!--sidebar-->
+        <aside class="sidebar">
+            <img class="photo" src="{% static 'ArtemTokar.jpg' %}" alt="my photo">
+
+            <!--contacts section-->
+            <div class="contacts_section">
+                <h3 class="sidebar_tittle">Contacts</h3>
+                <div>
+                    <span class="contact_section_type">C:</span>
+                    <a class="contact_section_link" href="tel:+34674930646">+34 674 93 06 46</a>
+                </div>
+                <div>
+                    <span class="contact_section_type">E:</span>
+                    <a class="contact_section_link" href="artem.tokar13@gmail.com">artem.tokar13@gmail.com</a>
+                </div>
+            </div>
+            <!--tech skills-->
+            <div class="tech_skills">
+                <h3 class="sidebar_tittle">Technologies</h3>
+                <ul class="skills_list">
+                    <li class="skills_item"> <span class="skills_item_text"> Python3 </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> Django </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> Django REST framework  </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> HTML5 </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> Bootstrap </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> CSS3 </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> GIT </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> Pytest </span></li>
+                </ul>
+            </div>
+            <!--soft skills-->
+            <div class="soft_skills">
+                <h3 class="sidebar_tittle">Soft Skills</h3>
+                <ul class="skills_list">
+                    <li class="skills_item"> <span class="skills_item_text"> Scrum </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> Agile </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> Teamwork </span></li>
+                </ul>
+            </div>
+            <!--Languages-->
+            <div class="soft_skills">
+                <h3 class="sidebar_tittle">Languages</h3>
+                <ul class="skills_list">
+                    <li class="skills_item"> <span class="skills_item_text"> Ukrainian - native </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> Russian - native </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> Spanish - fluent </span></li>
+                    <li class="skills_item"> <span class="skills_item_text"> English - B2 </span></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+    </div>
+
+</body>
+</html>
+
