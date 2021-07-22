@@ -9,3 +9,6 @@ def home(request):
 
 def cv(request):
     return render(request, 'portfolio/index.html')
+
+def contacts(request):
+    return render(request, 'portfolio/contacts.html')
