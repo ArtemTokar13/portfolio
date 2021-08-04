@@ -3,10 +3,7 @@
 {% load static %}
 
 {% block content %}
-    <br>
-    <br>
-    <br>
-    <br>
+
     <h1 class="container text-center">Personal portfolio of</h1>
     <h1 class="container text-center">ARTEM TOKAR</h1>
     <h1 class="container text-center">Back-end developer</h1>
@@ -18,8 +15,9 @@
         <div class="row">
         {% for project in projects %}
             <div class="col-sm-4">
-            <image src="{{ project.image.url }}" class="img-fluid"></image>
-            <a class="l-flex" href="{{ project.url }}"><h2>{{ project.title }}</h2></a>
+            <h2>{{ project.title }}</h2>
+            <a target="blank" class="l-flex link-text" href="{{ project.url }}">
+            <image src="{{ project.image.url }}" class="img-fluid"></image></a>
             <p>{{ project.description }}</p>
             </div>
         {% endfor %}

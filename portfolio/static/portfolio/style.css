@@ -1,24 +1,41 @@
 .navbar {
   overflow: hidden;
-  background-color: #BEE2DE;
+  background-color: #022906;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   font-size: 25px;
 }
 
+.my-nav {
+  color: #FBFFE1;
+  font-size: 28px;
+}
+
+.link-text {
+color: red;
+}
+
+.contact-card {
+position: fixed;
+top: 20%;
+left: 25%;
+width: 50%;
+}
+
 .img {
-  width: 70%;
+  width: 60%;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.AT{
-font-size: 28px;
+.icon {
+width: 35px;
 }
 
 .projects{
-background-color: #BEE2DE;
+background-color: #022906;
+color: #FBFFE1;
 }
 
 .home-top{
@@ -31,8 +48,15 @@ margin-right: 100px;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #f5f7fa;
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    background: url("background.jpg");
+    color: black;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .main_conteiner {
@@ -189,7 +213,7 @@ body {
 /* sidebar */
 
 .sidebar {
-  background-color: #1e2939;
+  background-color: #737F89;
   width: 370px;
 }
 

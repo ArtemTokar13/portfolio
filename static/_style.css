@@ -31,8 +31,9 @@ margin-right: 100px;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #f5f7fa;
+    margin-top: 200px;
+    font-family: "Montserrat", sans-serif;
+    background: #f5f7fa;
 }
 
 .main_conteiner {
@@ -248,3 +249,4 @@ width: 370px;
   line-height: 24px;
   color: #fff;
 }
+
